@@ -5,9 +5,7 @@ A dark theme designed to minimize eye strain. Two different versions with differ
 
 ## Screenshots
 
-![python](https://raw.githubusercontent.com/emilrwx/fresh-dark/master/screenshots/python.png)
-
-![notebook](https://raw.githubusercontent.com/emilrwx/fresh-dark/master/screenshots/notebook.png)
+![notebook](https://raw.githubusercontent.com/emilnuutinen/fresh-dark/master/screenshots/notebook.png)
 
 ## Contributing
 
