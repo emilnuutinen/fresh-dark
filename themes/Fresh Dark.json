@@ -15,7 +15,7 @@
 		"dropdown.foreground": "#a0a090",
 		"editor.background": "#111111",
 		"editor.foreground": "#a0a090",
-		"editorCursor.foreground": "#cc241d",
+		"editorCursor.foreground": "#a0a090",
 		"editorGroup.emptyBackground": "#111111",
 		"editorGroup.border": "#4f4f4f",
 		"editorGroupHeader.tabsBackground": "#111111",
@@ -82,8 +82,8 @@
 		"tab.unfocusedActiveBorder": "#111111",
 		"terminal.background": "#111111",
 		"terminal.foreground": "#a0a090",
-		"terminalCursor.background": "#cc241d",
-		"terminalCursor.foreground": "#cc241d",
+		"terminalCursor.background": "#a0a090",
+		"terminalCursor.foreground": "#a0a090",
 		"terminal.ansiBlack": "#111111",
 		"terminal.ansiBlue": "#458588",
 		"terminal.ansiBrightBlack": "#4f4f4f",
@@ -113,10 +113,21 @@
 			}
 		},
 		{
+			"name": "Python",
+			"scope": [
+				"source.python"
+			],
+			"settings": {
+				"foreground": "#a0a090"
+			}
+		},
+		{
 			"name": "Variables",
 			"scope": [
 				"variable",
-				"string constant.other.placeholder"
+				"string constant.other.placeholder",
+				"meta.indexed-name.python",
+				"meta.item-access.arguments.python"
 			],
 			"settings": {
 				"foreground": "#98971a"
@@ -170,6 +181,9 @@
 			"scope": [
 				"keyword",
 				"meta.function-call",
+				"meta.function.definition.rust",
+				"keyword.other.fn.rust",
+				"meta.function.python",
 				"support.class.console.js",
 				"support.variable.property.dom.js",
 				"support.class.builtin.js",
@@ -182,7 +196,10 @@
 				"storage.modifier",
 				"keyword.control.flow.js",
 				"storage.type.function.js",
-				"storage.modifier.async.js"
+				"storage.modifier.async.js",
+				"entity.name.type.rust",
+				"entity.name.namespace.rust",
+				"meta.use.rust"
 			],
 			"settings": {
 				"foreground": "#458588"
@@ -257,28 +274,64 @@
 				"keyword.operator.new.js",
 				"keyword.operator.spread.js",
 				"keyword.operator.rest.js",
+				"punctuation.definition.tag",
+				"meta.embedded.expression.js",
+				"invalid.illegal.attribute.js",
+				"keyword.control.flow.js",
+				"storage.type.js",
+				"keyword.operator.assignment.python",
+				"keyword.operator.comparison.python",
+				"keyword.operator.arithmetic.python",
+				"keyword.operator.relational.python",
+				"keyword.operator.increment.python",
+				"keyword.operator.decrement.python",
+				"keyword.operator.logical.python",
+				"storage.type.rust",
+				"keyword.other.rust"
+			],
+			"settings": {
+				"foreground": "#cc241d"
+			}
+		},
+		{
+			"name": "brackets etc.",
+			"scope": [
+				"meta.brace.square.js",
+				"meta.brace.round.js",
+				"punctuation.definition.block.js",
 				"punctuation.definition.tag.begin.js",
 				"punctuation.definition.tag.end.js",
 				"punctuation.definition.tag",
-				"punctuation.definition.binding-pattern.object.js",
-				"punctuation.definition.block.js",
 				"punctuation.definition.parameters.begin.js",
 				"punctuation.definition.parameters.end.js",
+				"punctuation.definition.binding-pattern.object.js",
+				"punctuation.section.embedded.end.js",
+				"punctuation.section.embedded.begin.js",
+				"punctuation.terminator.statement.js",
+				"meta.import.js",
+				"variable.other.readwrite.alias.js",
 				"punctuation.definition.generic.end.html",
 				"punctuation.definition.generic.begin.html",
 				"punctuation.section.property-list.begin.bracket.curly.css",
 				"punctuation.section.property-list.end.bracket.curly.css",
-				"punctuation.section.embedded.end.js",
-				"punctuation.section.embedded.begin.js",
-				"meta.embedded.expression.js",
-				"meta.brace.square.js",
-				"meta.brace.round.js",
-				"invalid.illegal.attribute.js",
-				"keyword.control.flow.js",
-				"storage.type.js"
+				"punctuation.parenthesis.begin.python",
+				"punctuation.parenthesis.end.python",
+				"punctuation.definition.arguments.begin.python",
+				"punctuation.definition.arguments.end.python",
+				"punctuation.definition.list.begin.python",
+				"punctuation.definition.parameters.begin.python",
+				"punctuation.definition.parameters.end.python",
+				"punctuation.section.function.begin.python",
+				"punctuation.separator.colon.python",
+				"punctuation.definition.list.end.python", "punctuation.section.embedded.end.erb",
+				"punctuation.section.embedded.begin.erb",
+				"punctuation.brackets.round.rust",
+				"punctuation.brackets.curly.rust",
+				"punctuation.brackets.square.rust",
+				"keyword.operator.namespace.rust"
 			],
 			"settings": {
-				"foreground": "#cc241d"
+				"foreground": "#a0a090"
 			}
 		},
 		{
@@ -291,10 +344,7 @@
 				"support.variable.object.node.js",
 				"support.variable.object.process.js",
 				"support.variable.property.process.js",
-				"source.python",
-				"support.type.python",
-				"punctuation.section.embedded.end.erb",
-				"punctuation.section.embedded.begin.erb"
+				"support.type.python"
 			],
 			"settings": {
 				"foreground": "#b16286"
@@ -320,7 +370,8 @@
 		{
 			"name": "Block Level Variables",
 			"scope": [
-				"meta.block variable.other"
+				"meta.block variable.other",
+				"variable.other.rust"
 			],
 			"settings": {
 				"foreground": "#98971a"
@@ -355,7 +406,12 @@
 		{
 			"name": "String, Symbols, Inherited Class, Markup Heading",
 			"scope": [
-				"string",
+				"punctuation.definition.string.rust",
+				"punctuation.definition.lifetime.rust",
+				"punctuation.definition.string.begin.python",
+				"punctuation.definition.string.end.python",
+				"punctuation.definition.string.begin.js",
+				"punctuation.definition.string.end.js",
 				"constant.other.symbol",
 				"constant.other.key",
 				"markup.heading",
@@ -364,6 +420,17 @@
 			],
 			"settings": {
 				"foreground": "#d79921"
+			}
+		},
+		{
+			"name": "String",
+			"scope": [
+				"string",
+				"string.quoted.double.rust"
+
+			],
+			"settings": {
+				"foreground": "#a0a090"
 			}
 		},
 		{
@@ -561,8 +628,6 @@
 			"name": "ES7 Bind Operator",
 			"scope": [
 				"source.js constant.other.object.key.js string.unquoted.label.js",
-				"meta.import.js",
-				"variable.other.readwrite.alias.js"
 			],
 			"settings": {
 				"foreground": "#b16286"
