@@ -196,13 +196,16 @@
 				"storage.modifier",
 				"keyword.control.flow.js",
 				"storage.type.function.js",
+				"storage.type.function.python",
+				"storage.type.class.python",
+				"storage.type.string.python",
 				"storage.modifier.async.js",
 				"entity.name.type.rust",
 				"entity.name.namespace.rust",
 				"meta.use.rust"
 			],
 			"settings": {
-				"foreground": "#458588"
+				"foreground": "#b16286"
 			}
 		},
 		{
@@ -230,7 +233,7 @@
 				"constant.other.color.rgb-value.hex.css"
 			],
 			"settings": {
-				"foreground": "#cc241d"
+				"foreground": "#d79921"
 			}
 		},
 		{
@@ -308,8 +311,6 @@
 				"punctuation.section.embedded.end.js",
 				"punctuation.section.embedded.begin.js",
 				"punctuation.terminator.statement.js",
-				"meta.import.js",
-				"variable.other.readwrite.alias.js",
 				"punctuation.definition.generic.end.html",
 				"punctuation.definition.generic.begin.html",
 				"punctuation.section.property-list.begin.bracket.curly.css",
@@ -323,15 +324,21 @@
 				"punctuation.definition.parameters.end.python",
 				"punctuation.section.function.begin.python",
 				"punctuation.separator.colon.python",
-				"punctuation.definition.list.end.python", "punctuation.section.embedded.end.erb",
+				"punctuation.definition.list.end.python",
+				"constant.character.format.placeholder.other.python",
+				"punctuation.section.embedded.end.erb",
 				"punctuation.section.embedded.begin.erb",
 				"punctuation.brackets.round.rust",
 				"punctuation.brackets.curly.rust",
 				"punctuation.brackets.square.rust",
-				"keyword.operator.namespace.rust"
+				"keyword.operator.namespace.rust",
+				"punctuation.definition.parameters.begin.bracket.round.css",
+				"punctuation.definition.parameters.end.bracket.round.css",
+				"punctuation.section.media.begin.bracket.curly.css",
+				"punctuation.section.media.end.bracket.curly.css"
 			],
 			"settings": {
-				"foreground": "#a0a090"
+				"foreground": "#cc241d"
 			}
 		},
 		{
@@ -361,17 +368,21 @@
 				"entity.name.function.js",
 				"entity.name.type.class.js",
 				"entity.other.inherited-class.js",
-				"entity.other.attribute-name.js"
+				"entity.other.attribute-name.js",
+				"variable.language.special.self.python",
+				"entity.name.type.class.python",
+				"entity.name.function.python"
 			],
 			"settings": {
-				"foreground": "#d79921"
+				"foreground": "#689d6a"
 			}
 		},
 		{
 			"name": "Block Level Variables",
 			"scope": [
 				"meta.block variable.other",
-				"variable.other.rust"
+				"variable.other.rust",
+				"variable.other.readwrite.alias.js"
 			],
 			"settings": {
 				"foreground": "#98971a"
@@ -397,10 +408,11 @@
 				"constant.escape",
 				"variable.parameter",
 				"keyword.other.unit",
-				"keyword.other"
+				"keyword.other",
+				"meta.function-call.arguments.python"
 			],
 			"settings": {
-				"foreground": "#d79921"
+				"foreground": "#458588"
 			}
 		},
 		{
@@ -412,11 +424,17 @@
 				"punctuation.definition.string.end.python",
 				"punctuation.definition.string.begin.js",
 				"punctuation.definition.string.end.js",
+				"punctuation.separator.comma.js",
+				"punctuation.definition.keyword.css",
+				"punctuation.separator.arguments.python",
 				"constant.other.symbol",
 				"constant.other.key",
 				"markup.heading",
 				"markup.inserted.git_gutter",
-				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+				"punctuation.definition.string.begin.json",
+				"punctuation.definition.string.end.json",
+				"punctuation.separator.dictionary.pair.json"
 			],
 			"settings": {
 				"foreground": "#d79921"
@@ -617,7 +635,7 @@
 		{
 			"name": "Decorators",
 			"scope": [
-				"tag.decorator.js entity.name.tag.js",
+				"tag.decorator.js",
 				"tag.decorator.js punctuation.definition.tag.js"
 			],
 			"settings": {
@@ -627,7 +645,7 @@
 		{
 			"name": "ES7 Bind Operator",
 			"scope": [
-				"source.js constant.other.object.key.js string.unquoted.label.js",
+				"source.js constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
 				"foreground": "#b16286"
