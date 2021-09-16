@@ -160,7 +160,11 @@
 				"punctuation.definition.entity.html",
 				"punctuation.definition.keyword.css",
 				"punctuation.definition.block.tag.jsdoc",
-				"storage.type.class.jsdoc"
+				"storage.type.class.jsdoc",
+				"punctuation.semi.rust",
+				"punctuation.comma.rust",
+				"punctuation.separator.comma.js",
+				"punctuation.terminator.statement.js"
 			],
 			"settings": {
 				"foreground": "#a0a090"
@@ -294,7 +298,8 @@
 				"keyword.operator.namespace.rust",
 				"keyword.operator.assignment.equal.rust",
 				"keyword.operator.comparison.rust",
-				"keyword.operator.logical.rust"
+				"keyword.operator.logical.rust",
+				"keyword.operator.access.dot.rust"
 			],
 			"settings": {
 				"foreground": "#cc241d"
@@ -426,13 +431,11 @@
 			"scope": [
 				"punctuation.definition.string.rust",
 				"punctuation.definition.lifetime.rust",
-				"punctuation.semi.rust",
-				"punctuation.comma.rust",
 				"punctuation.definition.string.begin.python",
 				"punctuation.definition.string.end.python",
 				"punctuation.definition.string.begin.js",
 				"punctuation.definition.string.end.js",
-				"punctuation.separator.comma.js",
+				"punctuation.accessor.js",
 				"punctuation.definition.keyword.css",
 				"punctuation.separator.arguments.python",
 				"constant.other.symbol",
@@ -442,7 +445,9 @@
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
 				"punctuation.definition.string.begin.json",
 				"punctuation.definition.string.end.json",
-				"punctuation.separator.dictionary.pair.json"
+				"punctuation.separator.dictionary.pair.json",
+				"punctuation.support.type.property-name.begin.json",
+				"punctuation.support.type.property-name.end.json"
 			],
 			"settings": {
 				"foreground": "#d79921"
