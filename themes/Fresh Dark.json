@@ -290,7 +290,11 @@
 				"keyword.operator.decrement.python",
 				"keyword.operator.logical.python",
 				"storage.type.rust",
-				"keyword.other.rust"
+				"keyword.other.rust",
+				"keyword.operator.namespace.rust",
+				"keyword.operator.assignment.equal.rust",
+				"keyword.operator.comparison.rust",
+				"keyword.operator.logical.rust"
 			],
 			"settings": {
 				"foreground": "#cc241d"
@@ -371,7 +375,9 @@
 				"entity.other.attribute-name.js",
 				"variable.language.special.self.python",
 				"entity.name.type.class.python",
-				"entity.name.function.python"
+				"entity.name.function.python",
+				"entity.name.function.rust",
+				"entity.name.function.macro.rust"
 			],
 			"settings": {
 				"foreground": "#689d6a"
@@ -420,6 +426,8 @@
 			"scope": [
 				"punctuation.definition.string.rust",
 				"punctuation.definition.lifetime.rust",
+				"punctuation.semi.rust",
+				"punctuation.comma.rust",
 				"punctuation.definition.string.begin.python",
 				"punctuation.definition.string.end.python",
 				"punctuation.definition.string.begin.js",
